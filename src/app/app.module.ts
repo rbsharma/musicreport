@@ -6,6 +6,7 @@ import { SharedModule } from "./shared/shared.module";
 import { HomeModule } from "./home/home.module";
 import { AppRouting } from "./app.routes";
 import { FifaModule  } from "./fifa/fifa.module";
+
 @NgModule({
   imports: [
     BrowserModule,

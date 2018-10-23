@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { SongModel } from '../../../models';
+import { YearlySongsModel } from '../../../models/song.model';
 @Component({
   selector: 'app-fifa-table',
   templateUrl: './table.component.html'
 })
 export class TableComponent implements OnInit {
-  @Input() data: SongModel;
+  @Input() data: YearlySongsModel;
   ngOnInit() {
     console.log(this.data);
   }

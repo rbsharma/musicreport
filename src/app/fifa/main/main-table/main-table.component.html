@@ -1,0 +1,19 @@
+
+<table *ngIf="data?.length>0" class="table table-light table-hover table-striped table-bordered">
+  <thead class="bg-info">
+    <tr>
+      <th>ID</th>
+      <!--<th>VOTES</th>-->
+      <th>NAME</th>
+      <th>YEAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="clickable" *ngFor="let item of data">
+      <td>{{item?.id}}</td>
+      <!--<td>{{item?.votes}}</td>-->
+      <td>{{item?.name}}</td>
+      <td>{{item?.year}}</td>
+    </tr>
+  </tbody>
+</table>
